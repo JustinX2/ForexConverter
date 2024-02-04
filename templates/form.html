@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="form-container">
+    <form action="{{url_for('index')}}" method="post">
+        From Currency:<input type="text" name="from_currency"><br>
+        To Currency:<input type="text" name="to_currency"><br>
+        Amount:<input type="number" name="amount"><br>
+        <input type="submit" value="Convert">
+    </form>
+</div>
+
+{% endblock %}
